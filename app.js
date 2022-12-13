@@ -17,9 +17,9 @@ cloes.addEventListener("click", () => {
 })
 menu.addEventListener("click", () => {
     overlay.classList.remove("hiddin")
-    menu_right.setAttribute('style', 'transform: translateX(0)')
+    menu_right.classList.remove("hiddin")
 })
 menu_close.addEventListener("click", () => {
     overlay.classList.add("hiddin")
-    menu_right.setAttribute('style', 'transform: translateX(500px)')
+    menu_right.classList.add("hiddin")
 })

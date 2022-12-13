@@ -656,7 +656,6 @@ hr {
     left: 50%;
     right: 50%;
     max-width: 740px;
-    transform: translateX(-50%);
     width: 100%;
     text-align: center;
     background: var(--white-color);
@@ -776,7 +775,7 @@ hr {
 }
 .tex-right p {
     text-align: center;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 46px;
 }
 .buttom__left img {
