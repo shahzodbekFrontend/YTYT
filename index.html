@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <div class="overlay hiddin">
+        
+    </div>
     <header>
         <div class="container">
             <div class="header__top">
@@ -32,8 +35,9 @@
                     </button>
                 </div>
                 <div class="menu">
-                    <i class="ri-menu-line"></i>
+                    <i class="ri-menu-line" id="menu"></i>
                 </div>
+                
             </div>
             <div class="header-buttom">
                 <div class="buttom__right">
@@ -42,7 +46,7 @@
                         а не просто сертификат
                     </h3>
                     <p>Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам</p>
-                    <button class="btn primeri-btn">
+                    <button class="btn primeri-btn btn1">
                         Пройти тестирование
                         <i class="ri-arrow-right-up-line"></i>
                     </button>
@@ -395,5 +399,37 @@
             </div>
         </div>
     </footer>
+    
+    <div class="menu-right" style="transform: translateX(500px);">
+        <i class="ri-close-line" id="menu-close"></i>
+        <ul>
+            <li><a href="#">Чему вы научитесь</a></li>
+            <li><a href="#">Процесс обучения</a></li>
+            <li><a href="#">Стоимость</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Регистрация</a></li>
+        </ul>
+        <button class="btn blue-btn">
+            <i class="ri-arrow-right-line"></i>
+            Войти
+        </button>
+    </div>
+
+
+
+    <div class="modal" style="transform: translate(-50%, -500%)">
+        <i class="ri-close-fill" id="cloes"></i>
+        <h3>Перед тем, как приступить к обучению, необходимо пройти небольшой тест</h3>
+        <p>
+            Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые программисту. Задания не самые простые. Но ни в коем случае не выбирайте ответы наугад. Если вы не можете дать правильный ответ – выбирайте пункт «Не знаю».
+        </p>
+        <button class="btn primeri-btn">
+            Начать тест
+            <i class="ri-arrow-right-up-line"></i>
+        </button>
+    </div>
+
+
+    <script src="./app.js"></script>
 </body>
 </html>

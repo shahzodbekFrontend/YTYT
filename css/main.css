@@ -43,6 +43,7 @@ body {
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
+        position: relative;
 }
 html {
     height: 100%;
@@ -76,11 +77,19 @@ ul li {
     align-items: center;
     gap: 5px;
 }
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 28, 42, .9);
+    z-index: 1000;
+}
 header {
     padding-top: 12px;
     background: url(../image/jpg/Group\ 132.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .header__top {
     padding: 10px 20px;
@@ -636,7 +645,48 @@ hr {
     font-size: 30px;
     display: none;
 }
+.menu #menu {
+    color: var(--buttom-bg-color);
+}
 
+.modal {
+    padding: 55px 113px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    max-width: 740px;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background: var(--white-color);
+    border-radius: 30px;
+    z-index: 1000;
+    transition: all 1s;
+}
+.modal>i:first-child {
+    font-size: 2em;
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+}
+.modal h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 22px;
+}
+.modal p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.modal button {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
@@ -658,6 +708,39 @@ hr {
 }
 .menu {
     display: block;
+    position: relative;
+}
+.menu-right {
+    /* display: none; */
+    width: 250px;
+    padding: 53px 34px 34px 34px;
+    border-radius: 20px;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    z-index: 1000;
+    background: #FFFFFF;
+    transition: all .8s;
+}
+#menu-close {
+    position: fixed;
+    top: 25px;
+    right: 40px;
+    font-size: 1.5em;
+}
+.menu-right ul li a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #22253B;
+}
+.menu-right ul li {
+    margin-bottom: 20px;
+}
+.menu-right button {
+    margin-top: 235px;
+    color: var(--white-color);
+    background: var(--brend-color);
 }
 .logo ul {
     display: none;
@@ -686,12 +769,14 @@ hr {
     display: none;
 }
 .tex-right {
-    width: 90%;
+    width: 100%;
+    justify-content: center;
     padding-bottom: 18px;
     gap: 20px;
 }
 .tex-right p {
-    font-size: 14px;
+    text-align: center;
+    font-size: 18px;
     line-height: 46px;
 }
 .buttom__left img {
@@ -699,7 +784,6 @@ hr {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-
 }
 .tex-right p:last-child {
     display: none;
@@ -739,6 +823,7 @@ line-height: 12px;
 }
 .help-top {
     max-width: 300px;
+    justify-content: center;
     flex-direction: column;
 }
 .help-left {
@@ -809,5 +894,20 @@ footer {
     color: var(--buttom-bg-color);
     gap: 0px;
 }
-
+.modal {
+    width: 300px;
+    padding: 40px 18px;
+}
+.modal h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 21px;
+}
+.modal p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.modal>i:first-child {
+    top: 20px;
+}
 }
