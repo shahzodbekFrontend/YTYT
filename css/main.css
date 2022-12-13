@@ -864,7 +864,12 @@ line-height: 26px;
     flex-direction: column;
 }
 .toodo-list {
+    min-height: 500px;
     overflow: hidden;
+}
+.main-karta {
+    padding-left: 0;
+    padding-right: 0;
 }
 .main-karta img {
     margin-bottom: 20px;
